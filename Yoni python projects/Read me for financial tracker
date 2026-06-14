@@ -1,0 +1,166 @@
+# Personal Finance Tracker
+
+## Overview
+
+Personal Finance Tracker is a desktop application built with Python that helps users manage their personal finances by recording income and expenses, storing transaction data in a SQLite database, generating financial summaries, and visualizing spending habits through charts.
+
+The project combines object-oriented programming, database management, graphical user interfaces, and data visualization into a single application.
+
+---
+
+## Features
+
+### Income Tracking
+
+* Add income transactions
+* Store amount, date, and description
+* Automatically save data to the database
+
+### Expense Tracking
+
+* Add expense transactions
+* Categorize expenses (Food, Rent, Transportation, etc.)
+* Save expenses permanently using SQLite
+
+### Financial Summary
+
+* Calculate total income
+* Calculate total expenses
+* Display current balance
+
+### Spending Visualization
+
+* Generate a pie chart showing spending by category
+* Visualize where money is being spent
+
+### Persistent Storage
+
+* Transactions are stored in a SQLite database
+* Data remains available between application sessions
+
+---
+
+## Technologies Used
+
+* Python
+* Tkinter
+* SQLite3
+* Matplotlib
+
+---
+
+## Project Structure
+
+```text
+finance_tracker/
+│
+├── main.py
+├── finance.db
+└── README.md
+```
+
+### Components
+
+#### Transaction Class
+
+Responsible for:
+
+* Validating transaction data
+* Standardizing inputs
+* Saving transactions to the database
+
+#### SQLite Database
+
+Stores transaction information:
+
+| Column      | Type    |
+| ----------- | ------- |
+| id          | INTEGER |
+| type        | TEXT    |
+| amount      | REAL    |
+| date        | TEXT    |
+| description | TEXT    |
+| category    | TEXT    |
+
+#### GUI
+
+Built using Tkinter and provides:
+
+* Add Income button
+* Add Expense button
+* View Summary button
+* View Spending Chart button
+* Exit button
+
+#### Data Visualization
+
+Matplotlib is used to generate spending distribution pie charts.
+
+---
+
+## Installation
+
+### Clone the repository
+
+```bash
+git clone https://github.com/yourusername/personal-finance-tracker.git
+cd personal-finance-tracker
+```
+
+### Install dependencies
+
+```bash
+pip install matplotlib
+```
+
+### Run the application
+
+```bash
+python main.py
+```
+
+---
+
+## Example Workflow
+
+1. Launch the application
+2. Add income transactions
+3. Add expense transactions
+4. View financial summary
+5. Generate spending chart
+
+---
+
+## Skills Demonstrated
+
+* Object-Oriented Programming (OOP)
+* Python GUI Development
+* SQLite Database Management
+* SQL Queries
+* Data Visualization
+* Event-Driven Programming
+* Software Design and Organization
+
+---
+
+## Future Improvements
+
+* Edit existing transactions
+* Delete transactions
+* Search and filter records
+* Monthly reports
+* Budget tracking
+* CSV export functionality
+* User authentication
+* Dashboard with additional charts
+* Dark mode interface
+* Transaction history table
+
+---
+
+## Author
+
+Yonatan
+
+
+This project was developed to practice software engineering principles, database management, GUI development, and data visualization using Python.
